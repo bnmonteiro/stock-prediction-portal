@@ -1,17 +1,18 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <nav className="navbar container pt-3 pb-3 align-items-start">
-        <a href="/" className="navbar-brand text-light">
+        <Link className="navbar-brand text-light" to="/">
           Stock Predicition Portal
-        </a>
+        </Link>
         <div>
-          <Button href="/login" className="btn btn-outline-info" text="Login" />
+          <Button url="/login" className="btn btn-outline-info" text="Login" />
           &nbsp;
-          <Button href="/register" className="btn btn-info" text="Register" />
+          <Button url="/register" className="btn btn-info" text="Register" />
         </div>
       </nav>
     </>
