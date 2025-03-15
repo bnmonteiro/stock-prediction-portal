@@ -23,11 +23,14 @@ const Header = () => {
         </Link>
 
         <div>
-          {/* <Button url="/login" className="btn btn-outline-info" text="Login" />
-          &nbsp; */}
-          {/* <Button url="/register" className="btn btn-info" text="Register" /> */}
           {isLoggedIn ? (
             <>
+              <Button
+                text="Dashboard"
+                className="btn btn-info"
+                url="/dashboard"
+              />
+              &nbsp;
               <button className="btn btn-danger" onClick={handleLogout}>
                 Logout
               </button>
