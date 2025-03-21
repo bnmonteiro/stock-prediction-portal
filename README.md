@@ -25,11 +25,10 @@ This repository contains a **full-fledged stock prediction portal** built using 
 
 - **React.js**
 - **Vite**
-- **Tailwind CSS (if applicable)**
 
 ### Database:
 
-- **PostgreSQL / MySQL / SQLite (based on configuration)**
+- **SQLite**
 
 ## Installation
 
@@ -83,7 +82,6 @@ Once both the backend and frontend servers are running, open your browser and na
 
 | Method | Endpoint             | Description          |
 | ------ | -------------------- | -------------------- |
-| GET    | `/api/stocks`        | Fetch stock data     |
 | POST   | `/api/predict`       | Predict stock trends |
 | POST   | `/api/auth/register` | Register new user    |
 | POST   | `/api/auth/login`    | Login user           |
